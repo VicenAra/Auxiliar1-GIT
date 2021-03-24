@@ -37,8 +37,10 @@
                     </div>
                     <div class="row">
                         <button class="taskAdd" name="taskAdd" type="submit"><i class="fa fa-plus icon"></i>Add task</button>
-                        <!--Persona B Agrega Código AQUI! -->
+                        <button class="taskDelete" name="taskDelete" formnovalidate="" type="submit" onclick="$('input#sublist').click();"><i class="fa fa-trash-o icon"></i>Delete Tasks</button>
                     </div>
+                    
+
 
 
                 <ul  class="taskList">
@@ -50,6 +52,7 @@
                         <strong class="taskDate"><i class="fa fa-calendar"></i>{{ todo.created }} - {{ todo.due_date }}</strong>
                     </li>
                 {% endfor %}
+
 
 
                 </ul><!-- taskList -->
